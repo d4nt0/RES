@@ -1,0 +1,23 @@
+<script>
+    function conta(){
+        let altura = parseFloat(document.getElementById('caixa_altura').value);
+        let peso   = parseFloat(document.getElementById('caixa_peso').value);
+        let resultado = peso/(altura*altura);
+            console.log(altura);
+            console.log(peso);
+            console.log(resultado);
+        document.getElementById('imc').value = resultado;
+
+        var alert1 = document.getElementById('alert1');
+        var alert2 = document.getElementById('alert2');
+
+        if (caixa_altura.value == "") {
+            alert1.style.display = "block";
+        }
+        
+        if (caixa_peso.value == "") {
+            alert2.style.display = "block";
+        }
+    }
+
+</script>
